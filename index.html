@@ -4,6 +4,58 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header, footer {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .projects {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .project {
+      background: white;
+      border-left: 5px solid #007bff;
+      margin-bottom: 2rem;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .project h2 {
+      margin-top: 0;
+    }
+    .tag {
+      font-size: 0.9rem;
+      color: white;
+      background: #6c757d;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .tech-list {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .site-link, .code-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,41 +66,47 @@
   <main>
     <section class="projects">
 
-      <!-- ===== プロジェクト 1 ===== -->
+      <!-- ===== プロジェクト 1: 自己学習 ===== -->
       <article class="project">
-        <h2>Rails アプリ</h2>
+        <div class="tag">自己学習</div>
+        <h2>保育ready</h2>
         <p class="desc">
-          Rails 7 / Hotwire で作成した簡易 SNS。ログイン、投稿、いいね機能付き。
+          保育士や幼稚園教諭の業務時間短縮サイトを作成とデプロイを行いました。
         </p>
-        <a class="site-link"   href="https://your-sns-app.onrender.com"  target="_blank">サイトを見る</a>
-        <a class="code-link"   href="https://github.com/あなたのユーザー名/rails-sns" target="_blank">GitHub</a>
+        <div class="tech-list">使用技術: Ruby on Rails, Docker, Heroku</div>
+        <a class="site-link" href="https://your-sns-app.onrender.com" target="_blank">サイトを見る</a>
+        <a class="code-link" href="https://github.com/Ryosatosugar/rails-sns" target="_blank">GitHub</a>
       </article>
 
-      <!-- ===== プロジェクト 2 ===== -->
+      <!-- ===== プロジェクト 2: 実務 ===== -->
       <article class="project">
+        <div class="tag">実務</div>
         <h2>ship</h2>
         <p class="desc">
-          説明
+          デザイナー提供のデザインカンプをもとにHTMLとCSSで実装した雑誌の紹介サイトです。
         </p>
-        <a class="site-link" href="https://あなたのユーザー名.github.io/todo-spa/" target="_blank">サイトを見る</a>
-        <a class="code-link" href="https://github.com/あなたのユーザー名/todo-spa"    target="_blank">GitHub</a>
+        <div class="tech-list">使用技術: HTML, CSS</div>
+        <a class="site-link" href="https://Ryosatosugar.github.io/todo-spa/" target="_blank">サイトを見る</a>
+        <a class="code-link" href="https://github.com/Ryosatosugar/todo-spa" target="_blank">GitHub</a>
       </article>
 
-      <!-- ===== プロジェクト 3 ===== -->
+      <!-- ===== プロジェクト 3: 実務 ===== -->
       <article class="project">
-        <h2></h2>
+        <div class="tag">実務</div>
+        <h2>地方国立大学のサイト</h2>
         <p class="desc">
-          説明
+          説明文をここに入力してください。
         </p>
-        <a class="site-link" href="https://あなたのユーザー名.github.io/todo-spa/" target="_blank">サイトを見る</a>
-        <a class="code-link" href="https://github.com/あなたのユーザー名/todo-spa"    target="_blank">GitHub</a>
+        <div class="tech-list">使用技術: HTML, CSS, JavaScript</div>
+        <a class="site-link" href="https://Ryosatosugar.github.io/other-project/" target="_blank">サイトを見る</a>
+        <a class="code-link" href="https://github.com/Ryosatosugar/other-project" target="_blank">GitHub</a>
       </article>
 
     </section>
   </main>
 
   <footer>
-    © 2025 佐藤亮
+    © 2025 Ryosato
   </footer>
 </body>
 </html>
