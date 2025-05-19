@@ -72,13 +72,17 @@
         <h2>保育ready</h2>
         <p class="desc">
           保育士や幼稚園教諭の業務時間短縮サイトを作成とデプロイを行いました。<br>
-          親戚に保育士が多く、持ち帰り業務や時間外作業の多さを聞いたことがきっかけです。<br>
-          アドミン用にログイン機能をdeviseで実装し、タグから投稿を検索可能にしました。<br>
-          画像の管理にはS3を利用して、保守性と使いやすさを考慮しています。
+          教室の装飾などに使う画像をダウンロードして印刷することで、そのまま使えます<br>
+          親戚に保育士が多く、持ち帰り業務や時間外作業の多さを聞いたことが開発のきっかけです。<br>
+          ユーザーは欲しい画像をイベントタグで検索可能<br>
+          荒らし防止のため、投稿は管理者のみに制限し、ログイン機能も管理者専用としています。ユーザーはログイン不要で気軽に利用できます。<br>
+          ログイン機能はdeviseで実装しました。<br>
+          荒らし防止のため、投稿は管理者のみに制限し、ログイン機能も管理者専用としています。ユーザーはログイン不要で気軽に利用できます。<br>
+          画像の管理にはS3を利用して、保守性を考慮しました。
         </p>
         <div class="tech-list">使用技術・ツール: Ruby, Ruby on Rails, Docker, HTML, CSS, bootstrap, Heroku, AWS(IAM, S3)</div>
         <a class="site-link" href="https://hoikuready-2932c7a498ef.herokuapp.com/" target="_blank">このサイトを見る</a>
-        <a class="site-link" href="https://hoikuready-2932c7a498ef.herokuapp.com/users/sign_in" target="_blank">管理者としてこのサイトを見る</a>
+        <a class="site-link" href="https://hoikuready-2932c7a498ef.herokuapp.com/users/sign_in" target="_blank">管理者としてサイトを見る</a>
         <a class="code-link" href="https://github.com/Ryosatosugar/EQ" target="_blank">GitHubはこちら</a>
       </article>
 
